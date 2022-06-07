@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+	<title> Image Upload </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="main.css">
+	<link rel="shortcut icon" href="Logo1.png">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<form action="imge.php" method="POST" enctype="multipart/form-data">
+	
+				<div class="drop-zone">
+					<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+					<header> Drag & Drop to Upload File</header><br>
+					<span>OR</span><br>
+					<span class="drop-zone__prompt"> Click to upload</span>
+		
+			
+		
+		<input type="file" name="file" class="drop-zone__input" multiple>
+		
+	
+</div>
+<div class="cbox">
+<label for="chck">Do you want to submit more images: </label>
+<input type="radio" name="chck" value="1">Yes
+ <input type="radio" name="chck" value="0">No<BR>
+	<button type="submit" style="width:auto;">Submit</button>
+</div>
+ </form>
+	
+	<script src="main.js"></script>
+</body>
